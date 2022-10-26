@@ -35,17 +35,17 @@ plt.show()
 
 #documento gli ultimi giorni di agosto
 
-#print("ultimi giorni di agosto")
-#x = np.array(["lunedi","martedi","mercoledi"])
-#y = np.array([74.35,73.9])
+print("ultimi giorni di agosto")
+x = np.array(["lunedi","martedi","mercoledi"])
+y = np.array([74.35,73.9,74.35])
 
-#plt.plot(x, y)
+plt.plot(x, y)
 
-#plt.xlabel("giorni")
-#plt.ylabel("peso")
+plt.xlabel("giorni")
+plt.ylabel("peso")
 
 
-#plt.show()
+plt.show()
 
 #calcolo medie carico esercizi
 try:
@@ -84,10 +84,17 @@ try:
 except:
     print("dati inseriti non corretti")
 
+#do il comando di aprire un file in jsonata
+
+print("confronto peso e altezza con i famigliari")
+
+df = pd.read_json('famiglia.json')
+
+print(df.to_string()) 
 
 
-
-
-
-
+        
 #fine codice
+
+
+print("****** THE AND *********")
